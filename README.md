@@ -161,7 +161,7 @@ Let's see what happens when we actually execute the code we've written:
 
 ```py
 ninety_nine_problems = Song("99 Problems")
-thriller = Song.new("Thriller")
+thriller = Song("Thriller")
 ```
 
 Now that we've created some songs, let's ask our `Song` class to show us all of
@@ -193,7 +193,7 @@ class Song:
         print([song.name for song in cls.all])
 
 ninety_nine_problems = Song("99 Problems")
-thriller = Song.new("Thriller")
+thriller = Song("Thriller")
 Song.show_song_names()
 # ['99 Problems', 'Thriller']
 ```
