@@ -148,7 +148,7 @@ class Song:
 
     def __init__(self, name):
         self.name = name
-        self.add_song_to_all(self)
+        Song.add_song_to_all(self)
 
     @classmethod
     def add_song_to_all(cls, song):
@@ -182,7 +182,7 @@ class Song:
 
     def __init__(self, name):
         self.name = name
-        self.add_song_to_all(self)
+        Song.add_song_to_all(self)
 
     @classmethod
     def add_song_to_all(cls, song):
@@ -204,7 +204,7 @@ Song.show_song_names()
 
 We did it! We used a class attribute to store a collection of instances of that
 class. We added new instances to this storage container every time a new
-instance was created with the help of the `self` keyword in our `__init__`
+instance was created with the help of the classname in our `__init__`
 method. Lastly, we wrote a class method to access and print out the name of
 each song instance stored in our class attribute.
 
