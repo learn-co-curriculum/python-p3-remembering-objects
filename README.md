@@ -208,6 +208,8 @@ instance was created with the help of the classname in our `__init__`
 method. Lastly, we wrote a class method to access and print out the name of
 each song instance stored in our class attribute.
 
+***
+
 ## Resources
 
 - [Python Documentation](https://docs.python.org/3/)
